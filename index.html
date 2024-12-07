@@ -3,443 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juegos</title>
-
-    <!-- Meta etiquetas de SEO -->
-    <meta name="description" content="Descarga los mejores juegos y APKs modificados con monedas y gemas ilimitadas. ¡Explora una amplia colección y disfruta de tus juegos favoritos!">
-    <meta name="keywords" content="juegos, APKs, mods, aplicaciones, Clash of Clans, descargas, gemas ilimitadas">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Juegos y APKS MOD">
-    <meta property="og:title" content="Juegos y APKS MOD - Descarga juegos y aplicaciones modificadas">
-    <meta property="og:description" content="Explora nuestra colección de juegos y aplicaciones modificadas con características especiales. ¡Descarga ahora!">
-    <meta property="og:image" content="https://i.ibb.co/6yxGKSn/20241106-024755-0000.png">
-    <meta property="og:url" content="https://apksyjuegosmodificados.serviciosonlines.com">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Juegos y APKS MOD">
-    <meta name="twitter:description" content="Descarga juegos y APKs modificados con monedas y gemas ilimitadas.">
-    <meta name="twitter:image" content="https://i.ibb.co/6yxGKSn/20241106-024755-0000.png">
-    
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VJVSMGRHPV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VJVSMGRHPV');
-</script>
+    <title>Chollos y Ventas</title>
     <style>
-        /* Estilos generales */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.ibb.co/gFFbKvM/Dise-o-sin-t-tulo-20241125-091609-0000.png');
+            background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-position: center; /* Centra la imagen en la pantalla */
         }
-        /* Encabezado */
         header {
-            background-color: #28a745;
-            padding: 10px;
+            background-color: #ff5722;
             color: white;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 60px;
-        }
-        header img {
-            height: 50px;
-            margin-right: 8px;
-        }
-        header h1 {
+            padding: 10px 20px;
+            text-align: center;
             font-size: 20px;
         }
-        .external-link-icon {
-            font-size: 24px;
-            cursor: pointer;
-            text-decoration: none;
-            color: white;
-            margin-left: 35px;
-        }
-        .external-link-icon, .theme-toggle {
-            font-size: 28px;
-            cursor: pointer;
-            color: white;
-            margin-left: 35px;
-        }
-        /* Contenedor de búsqueda */
-        .search-container {
+        nav {
+            overflow-x: auto;
+            white-space: nowrap;
+            background-color: #ffccbc;
             padding: 10px;
-            background-color: #e3e1e1;
-            text-align: center;
         }
-        .search-container input {
-            padding: 10px;
-            width: 85%;
-            border: 1px solid #ddd;
-            border-radius: 15px;
-        }
-        /* Tarjetas de juegos */
-        .cards {
-           display: flex;
-           flex-wrap: wrap;
-           justify-content: flex-start;
-           max-width: 1000px; /* Puedes ajustar este ancho según tu diseño */
-           margin: 0 auto; /* Centra el contenedor */
-           padding: 10px;
-           gap: 10px;
-        }
-
-        .card {
-           background-color: #fff;
-           border: 1px solid #ddd;
-           border-radius: 5px;
-           width: calc(42% - 10px);
-           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-           padding: 15px;
-           text-align: center;
-        }
-
-        .card img {
-            width: 100%;
-            height: auto;
-            border-radius: 15px;
-        }
-        .card h2 {
-            font-size: 14px;
+        nav a {
+            display: inline-block;
             color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            background-color: white;
+            margin: 0 5px;
+            font-size: 16px;
         }
-        .card h3 {
-            font-size: 13px;
-            color: #555;
+        nav a:hover {
+            background-color: #ffab91;
         }
-        .card p {
-            font-size: 12px;
-            color: #777;
+        .search-bar {
+            background-color: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
         }
-        .card button {
-            background-color: #28a745;
-            color: white;
-            border: none;
+        .search-bar input {
+            width: 93%;
             padding: 10px;
-            width: 100%;
-            border-radius: 5px;
-            cursor: pointer;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 15px;
         }
-        /* Menú inferior */
-        .footer-menu {
-            background-color: #424242;
-            color: white;
-            display: flex;
-            justify-content: space-around;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .footer-menu div {
-            text-align: center;
-            font-size: 14px;
-            cursor: pointer;
-        }
-        .footer-menu div i {
-            display: block;
-            font-size: 20px;
-            margin-bottom: 5px;
-        }
-
-        /* Contenido principal */
         main {
-            flex: 1;
             padding: 20px;
         }
-        footer {
-            background-color: #28a745;
-            color: #fff;
-            padding: 0.5px 5px;
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .product-info {
+            margin-top: 10px;
+        }
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .product-prices {
+            margin: 10px 0;
+        }
+        .product-prices .original-price {
+            color: red;
+            text-decoration: line-through;
+            font-size: 14px;
+            margin-right: 5px;
+        }
+        .product-prices .current-price {
+            color: green;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .product-description {
+            font-size: 14px;
+            color: #666;
+        }
+        .product-actions {
+            margin-top: 10px;
             text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: white;
+            background-color: #ff5722;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .btn:hover {
+            background-color: #e64a19;
         }
     </style>
 </head>
 <body>
 
-    <!-- Encabezado -->
-    <header>
-        <div style="display: flex; align-items: center;">
-            <img src="https://i.ibb.co/6yxGKSn/20241106-024755-0000.png" alt="Logo">
-            <h1>TIENDA DE LIBROS</h1>
-        </div>
-        <span class="theme-toggle" onclick="toggleTheme()">🌞</span>
-    </header>
+<header>
+    📚 TIENDA CON LOS MEJORES PRECIOS DE LIBROS 
+</header>
 
-    <!-- Contenedor de búsqueda -->
-    <div class="search-container">
-        <input type="text" placeholder="Buscar libros...">
-    </div>
+<nav>
+    <a href="#index.html">Más vendidos</a>
+    <a href="#idiomas.html">Idiomas</a>
+    <a href="#negocios.html">Negocios</a>
+    <a href="#superacion.html">Superación Personal</a>
+    <a href="#trucos.html">Trucos Psicológicos</a>
+</nav>
 
-    <!-- Botón para unirse al canal de Telegram -->
-<div style="text-align: center; margin-top: 10px;">
-    <button style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 20px; cursor: pointer;"
-            onclick="window.location.href='https://t.me/ApkAndroideHacking'">
-        Únete a nuestro canal de Telegram
-    </button>
+<div class="search-bar">
+    <input type="text" placeholder="Buscar productos...">
 </div>
 
-    <!-- Tarjetas de juegos -->
-    <div class="cards">
-    <div class="card">
-        <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1379393064l/18492553.jpg" alt="Portugués para Dummies">
-        <h2>Portugués para Dummies</h2>
-        <h3>Por Karen Keller</h3>
-        <p>Precio: $5.00</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='https://t.me/PubliAdmin'">Comprar</button>
-    </div>
-    <div class="card">
-        <img src="https://i.ibb.co/Wkh8mGM/photo-4997163117565816620-x.jpg" alt="Clash Royale">
-        <h2>Clash of Clans</h2>
-        <h3>💎 Monedas y gemas ilimitadas</h3>
-        <p>V16.386.9</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='clash.html'">Descargar</button>
-    </div>
-    <div class="card">
-        <img src="https://i.ibb.co/wWXG5FM/photo-4997163117565816633-m.jpg" alt="Plants vs Zombies">
-        <h2>Plants vs Zombies 3</h2>
-        <h3>💎 Monedas y Soles ilimitados</h3>
-        <p>V11.8.1</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='plants.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/mCZ8TQq/photo-4997163117565816636-x.jpg" alt="Sonic Dash 2">
-        <h2>Sonic Dash 2</h2>
-        <h3>💎 Dinero y monedas ilimitadas</h3>
-        <p>V3.10.0</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='sonic.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/3kYMkWQ/photo-4997163117565816622-m.jpg" alt="Subway Surfers">
-        <h2>Subway Surfers</h2>
-        <h3>💎 Monedas y llaves ilimitadas</h3>
-        <p>V3.20.1</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='subway.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/LCGJWjj/photo-4997163117565816624-x.jpg" alt="Zombie Catchers">
-        <h2>Zombie Catchers</h2>
-        <h3>💎 Monedas y dinero ilimitado</h3>
-        <p>V1.32.7</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='zombie.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/2vcQD8c/photo-4997163117565816626-m.jpg" alt="Homescapes">
-        <h2>Homescapes</h2>
-        <h3>💎 Monedas y estrellas ilimitadas</h3>
-        <p>V6.5.2</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='homescapes.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/6WCLy1V/photo-4997163117565816628-x.jpg" alt="Cooking Fever">
-        <h2>Cooking Fever</h2>
-        <h3>💎 Monedas y gemas ilimitadas</h3>
-        <p>V21.2.2</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='cooking.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/prqhGss/photo-4997163117565816637-x.jpg" alt="Monopoly">
-        <h2>Monopoly</h2>
-        <h3>💎 Monedas y dinero ilimitado</h3>
-        <p>V1.13.2</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='monopoly.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/km05SNZ/IMG-20241107-223301-657.jpg" alt="GTA: Liberty City Stories">
-        <h2>GTA: Liberty City Stories</h2>
-        <h3>💎 Monedas y dinero ilimitado</h3>
-        <p>V2.4.298</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='gta.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/rss1GqB/IMG-20241107-222505-319.jpg" alt="Candy Crush Soda Saga">
-        <h2>Candy Crush Soda Saga</h2>
-        <h3>💎 Monedas y movimientos ilimitados</h3>
-        <p>V1.266.3</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='candy.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/wwSt5kT/IMG-20241107-213739-395.jpg" alt="The Simpsons: Tapped Out">
-        <h2>The Simpsons</h2>
-        <h3>💎 Efectivo y Donuts ilimitados</h3>
-        <p>V4.68.5</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='simpsons.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/rc7CFYg/IMG-20241107-213904-361.jpg" alt="Harry Potter: Hogwarts Mystery">
-        <h2>Harry Potter</h2>
-        <h3>💎 Monedas y energía ilimitada</h3>
-        <p>V5.9.8</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='harry.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/3kjNtgb/IMG-20241107-221352-796.jpg" alt="Zombie Tsunami">
-        <h2>Zombie Tsunami</h2>
-        <h3>💎 Monedas y dinero ilimitado</h3>
-        <p>V4.5.123</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='zombietsunami.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/7ydvvnb/IMG-20241107-212459-533.jpg" alt="Hill Climb Racing">
-        <h2>Hill Climb Racing</h2>
-        <h3>💎 Monedas y dinero ilimitado</h3>
-        <p>V1.62.3</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='hill.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/xgQq6Nx/IMG-20241107-192920-830.jpg" alt="Angry Birds 2">
-        <h2>Angry Birds 2</h2>
-        <h3>💎 Monedas y dinero ilimitado</h3>
-        <p>3.25.0</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='angry.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/GHx2Wmc/IMG-20241107-194701-549.jpg" alt="Temple Run 2">
-        <h2>Temple Run 2</h2>
-        <h3>💎 Monedas y dinero ilimitado</h3>
-        <p>1.114.0</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='temple.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/mHwqb2S/IMG-20241107-205501-247.jpg" alt="Dragon Ball Legends">
-        <h2>Dragon Ball Legends</h2>
-        <h3>💎 Modo Dios (inmortalidad)</h3>
-        <p>5.9.0</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='dragon.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/g9CPYQn/IMG-20241107-210738-266.jpg" alt="Gardenscapes">
-        <h2>Gardenscapes</h2>
-        <h3>💎 Monedas y llaves ilimitadas</h3>
-        <p>8.2.0</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='gardenscapes.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/55bvh6N/photo-5001634105506508840-m.jpg" alt="Free Fire MAX">
-        <h2>Free Fire MAX</h2>
-        <h3>💎 Monedas y diamantes ilimitados</h3>
-        <p>2.106.1</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='free.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/r6GGm1M/photo-5006216096876965547-m.jpg" alt="EA SPORTS FC™">
-        <h2>EA SPORTS FC</h2>
-        <h3>💎 Monedas y dinero ilimitado</h3>
-        <p>23.0.02</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='ea.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/6ZVkZm4/IMG-20241109-160734-476.jpg" alt="Beach Buggy Racing 2™">
-        <h2>Beach Buggy Racing 2</h2>
-        <h3>💎 Monedas y dinero ilimitado</h3>
-        <p>2024.11.06</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='beach.html'">Descargar</button>
-    </div>
-        <div class="card">
-        <img src="https://i.ibb.co/CWNvhfx/IMG-20241109-161229-296.jpg" alt="City Island 6™">
-        <h2>City Island 6</h2>
-        <h3>💎 Monedas y dinero ilimitado</h3>
-        <p>3.1.2</p>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
-        <button onclick="window.location.href='cityisland.html'">Descargar</button>
-    </div>
-</div>
-
-    <!-- Botón para unirse al canal de Telegram -->
-<div style="text-align: center; margin-top: 10px;">
-    <button style="background-color: #4fa0f7; color: white; padding: 10px 20px; border: none; border-radius: 25px; cursor: pointer; margin-bottom: 20px;"
-            onclick="window.location.href='https://t.me/ApkAndroideHacking'">
-        Entra aquí para más juegos
-    </button>
-</div>
-
-    <!-- Pie de página -->
-    <footer>
-        <p>© 2024 Juegos y Apks Mod. Todos los derechos reservados.</p>
-    </footer>
-
-    <!-- Menú inferior -->
-    <div class="footer-menu">
-        <div onclick="openSection('juegos')">
-            <i class="home-icon">🔴</i>
-            <span>Juegos</span>
+<main>
+    <div class="product-grid">
+        <!-- Producto 1 -->
+        <div class="product-card">
+            <img src="https://i.ibb.co/RPK0F8d/photo-5917881338483033291-x.jpg" alt="Producto 1">
+            <div class="product-info">
+                <div class="product-title">POCO C65 Azul 6 GB + 128 GB</div>
+                <div class="product-prices">
+                    <span class="original-price">€229.99</span>
+                    <span class="current-price">€149.99</span>
+                </div>
+                <div class="product-description">
+                    MediaTek Helio G85 de gran potencia. Cámara triple de 50 MP con IA
+                </div>
+            </div>
+            <div class="product-actions">
+                <a href="https://www.amazon.es" class="btn" target="_blank">Ver Oferta</a>
+            </div>
         </div>
-        <div onclick="openSection('aplicaciones')">
-            <i class="app-icon">🟡</i>
-            <span>Aplicaciones</span>
+        <!-- Producto 2 -->
+        <div class="product-card">
+            <img src="https://i.ibb.co/Mn4drRc/photo-5911029005925074647-x.jpg" alt="Producto 2">
+            <div class="product-info">
+                <div class="product-title">Redmi Pad SE Gris Grafito 8 GB + 256 GB</div>
+                <div class="product-prices">
+                    <span class="original-price">€249.99</span>
+                    <span class="current-price">€179.99</span>
+                </div>
+                <div class="product-description">
+                    La gran pantalla FHD+ de 11" con 16,7 millones de colores y una tasa de refresco fluida de 90 Hz
+                </div>
+            </div>
+            <div class="product-actions">
+                <a href="https://www.amazon.es" class="btn" target="_blank">Ver Oferta</a>
+            </div>
         </div>
-        <div onclick="openSection('telegram')">
-            <i class="telegram-icon">🟢</i>
-            <span>Telegram</span>
+        <!-- Producto 3 -->
+        <div class="product-card">
+            <img src="https://i.ibb.co/Qpr6Nyk/photo-5917868002609579527-x.jpg" alt="Producto 3">
+            <div class="product-info">
+                <div class="product-title">Xiaomi Electric Shaver S301 Replacement Head</div>
+                <div class="product-prices">
+                    <span class="original-price">€24.99</span>
+                    <span class="current-price">€17.99</span>
+                </div>
+                <div class="product-description">
+                    Resistente, afilada y duradera. Una experiencia de afeitado cómoda y precisa
+                </div>
+            </div>
+            <div class="product-actions">
+                <a href="https://www.amazon.es" class="btn" target="_blank">Ver Oferta</a>
+            </div>
         </div>
     </div>
+</main>
 
-    <script>
-    function toggleTheme() {
-        const body = document.body;
-        const themeToggle = document.querySelector('.theme-toggle');
-        
-        // Alterna entre fondo oscuro y claro
-        if (body.style.backgroundColor === 'black') {
-            body.style.backgroundColor = 'white';
-            body.style.color = 'black';
-            themeToggle.textContent = '🌞'; // Icono de sol para el modo claro
-        } else {
-            body.style.backgroundColor = 'black';
-            body.style.color = 'white';
-            themeToggle.textContent = '🌜'; // Icono de luna para el modo oscuro
-        }
-    }
-    document.addEventListener("DOMContentLoaded", function() {
-        const searchInput = document.querySelector(".search-container input");
-        const cards = document.querySelectorAll(".card");
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.querySelector(".search-bar input");
+        const productCards = document.querySelectorAll(".product-card");
 
-        searchInput.addEventListener("input", function() {
-            const searchText = searchInput.value.toLowerCase();
-            cards.forEach(card => {
-                const title = card.querySelector("h2").textContent.toLowerCase();
-                card.style.display = title.includes(searchText) ? "block" : "none";
-            });
+        searchInput.addEventListener("input", function () {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        productCards.forEach(card => {
+            const productTitle = card.querySelector(".product-title").textContent.toLowerCase();
+            const productDescription = card.querySelector(".product-description").textContent.toLowerCase();
+
+            if (productTitle.includes(searchTerm) || productDescription.includes(searchTerm)) {
+                card.style.display = "block"; // Mostrar tarjeta si coincide
+            } else {
+                card.style.display = "none"; // Ocultar tarjeta si no coincide
+            }
         });
     });
-
-    function openSection(section) {
-        // Lógica para cambiar de sección. Puedes ajustar cada sección según tu necesidad.
-        if (section === 'juegos') {
-        } else if (section === 'aplicaciones') {
-            window.location.href = 'aplicaciones.html'; // Redirige a aplicaciones.html
-        } else if (section === 'telegram') {
-            window.location.href = 'https://t.me/ApkAndroideHacking'; // Enlace a Telegram
-        }
-    }
-    </script>
+});
+</script>
 
 </body>
 </html>
