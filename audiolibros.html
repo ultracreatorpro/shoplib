@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Libros y Audiolibros</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.ibb.co/gFFbKvM/Dise-o-sin-t-tulo-20241125-091609-0000.png');
+            background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            background-position: center; /* Centra la imagen en la pantalla */
+        }
+        header {
+            background-color: #57ba30;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+        nav {
+            overflow-x: auto;
+            white-space: nowrap;
+            background-color: #cccccc;
+            padding: 10px;
+        }
+        nav a {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            background-color: white;
+            margin: 0 5px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            background-color: #ffab91;
+        }
+        .search-bar {
+            background-color: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .search-bar input {
+            width: 93%;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            max-width: 100%;
+            max-height: 250px; /* Ajusta la altura máxima según lo necesario */
+            border-radius: 0px;
+            display: block;
+            margin: 0 auto; /* Centra horizontalmente */
+            object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
+        }
+        .product-info {
+            margin-top: 10px;
+        }
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .product-prices {
+            margin: 10px 0;
+        }
+        .product-prices .original-price {
+            color: red;
+            text-decoration: line-through;
+            font-size: 14px;
+            margin-right: 5px;
+        }
+        .product-prices .current-price {
+            color: green;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .product-description {
+            font-size: 14px;
+            color: #666;
+        }
+        .product-actions {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: white;
+            background-color: #57ba30;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .btn:hover {
+            background-color: #e64a19;
+        }
+        #backToTop {
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+            display: none; /* Inicialmente oculto */
+            background-color: #439ffa;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+      }
+      #backToTop:hover {
+           background-color: #e64a19;
+      }
+    </style>
+</head>
+<body>
+
+<header>
+    📚 LIBROS Y AUDIOLIBROS AL MEJOR PRECIO DEL MERCADO
+</header>
+
+<nav>
+    <a href="index.html">Libros y Cursos</a>
+    <a href="audiolibros.html">Audiolibros</a>
+    <a href="https://t.me/PubliAdmin">Escríbenos</a>
+</nav>
+
+<div class="search-bar">
+    <input type="text" placeholder="Buscar libros y cursos...">
+</div>
+
+<main>
+    <div class="product-grid">
+        <!-- Producto 1 -->
+        <div class="product-card">
+            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1385867369l/19076449.jpg" alt="Producto 1">
+            <div class="product-info">
+                <div class="product-title">Inglés para Dummies</div>
+                <div class="product-prices">
+                    <span class="original-price">$22.00</span>
+                    <span class="current-price">$10.00</span>
+                </div>
+                <div class="product-description">
+                    ¡Repleto de explicaciones claras y ejemplos prácticos! ¡Tu guía perfecta para el entendimiento del inglés fácil y con rapidez! 
+                </div>
+            </div>
+            <div class="product-actions">
+                <a href="https://t.me/PubliAdmin" class="btn" target="_blank">Comprar</a>
+            </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="product-card">
+            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347596102l/1369716.jpg" alt="Producto 2">
+            <div class="product-info">
+                <div class="product-title">Sexo para Dummies</div>
+                <div class="product-prices">
+                    <span class="original-price">$12.00</span>
+                    <span class="current-price">$6.00</span>
+                </div>
+                <div class="product-description">
+                    Este libro es un completo compendio sobre la sexualidad, que busca ayudar a las parejas a vivir un sexo más ardiente, erótico y placentero.
+                </div>
+            </div>
+            <div class="product-actions">
+                <a href="https://t.me/PubliAdmin" class="btn" target="_blank">Comprar</a>
+            </div>
+        </div>
+        <!-- Producto 3 -->
+        <div class="product-card">
+            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1379393064l/18492553.jpg" alt="Producto 3">
+            <div class="product-info">
+                <div class="product-title">Portugués para Dummies</div>
+                <div class="product-prices">
+                    <span class="original-price">$15.00</span>
+                    <span class="current-price">$7.00</span>
+                </div>
+                <div class="product-description">
+                    Con esta sencilla guía podrás hablar desde el primer día un idioma que comparten más de 240 millones de personas de todo el mundo. 
+                </div>
+            </div>
+            <div class="product-actions">
+                <a href="https://t.me/PubliAdmin" class="btn" target="_blank">Comprar</a>
+            </div>
+        </div>
+        <!-- Producto 4 -->
+        <div class="product-card">
+            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1344681553l/13238709.jpg" alt="Producto 4">
+            <div class="product-info">
+                <div class="product-title">Coaching para Dummies</div>
+                <div class="product-prices">
+                    <span class="original-price">$20.00</span>
+                    <span class="current-price">$8.00</span>
+                </div>
+                <div class="product-description">
+                    Técnicas prácticas para ayudarte a tomar acción y crear la vida que deseas Inspírate, toma el control y alcanza tu potencial 
+                </div>
+            </div>
+            <div class="product-actions">
+                <a href="https://t.me/PubliAdmin" class="btn" target="_blank">Comprar</a>
+            </div>
+        </div>
+        <!-- Producto 5 -->
+        <div class="product-card">
+            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1438171392l/26002635._SX318_.jpg" alt="Producto 5">
+            <div class="product-info">
+                <div class="product-title">Ventas para Dummies</div>
+                <div class="product-prices">
+                    <span class="original-price">$16.00</span>
+                    <span class="current-price">$6.00</span>
+                </div>
+                <div class="product-description">
+                     El maravilloso mundo de las ventas, descubre en qué consiste ser un buen vendedor y como potenciar tus habilidades
+                </div>
+            </div>
+            <div class="product-actions">
+                <a href="https://t.me/PubliAdmin" class="btn" target="_blank">Comprar</a>
+            </div>
+        </div>
+        <!-- Producto 6 -->
+        <div class="product-card">
+            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1380825656l/18624336.jpg" alt="Producto 6">
+            <div class="product-info">
+                <div class="product-title">Ponerse en forma para Dummies</div>
+                <div class="product-prices">
+                    <span class="original-price">$15.00</span>
+                    <span class="current-price">$6.00</span>
+                </div>
+                <div class="product-description">
+                      En estas páginas el autor te presenta un plan de ejercicios semanales, arropado con consejos, anécdotas, trucos para mantener la motivación y pautas dietéticas
+                </div>
+            </div>
+            <div class="product-actions">
+                <a href="https://t.me/PubliAdmin" class="btn" target="_blank">Comprar</a>
+            </div>
+        </div>
+        <!-- Producto 7 -->
+        <div class="product-card">
+            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1344751688l/15812860.jpg" alt="Producto 7">
+            <div class="product-info">
+                <div class="product-title">Inglés de negocios para Dummies</div>
+                <div class="product-prices">
+                    <span class="original-price">$18.00</span>
+                    <span class="current-price">$8.00</span>
+                </div>
+                <div class="product-description">
+                      ¡Que el inglés no sea un obstáculo! Esta práctica guía te presenta 80 situaciones habituales del mundo de los negocios para que estés preparado
+                </div>
+            </div>
+            <div class="product-actions">
+                <a href="https://t.me/PubliAdmin" class="btn" target="_blank">Comprar</a>
+            </div>
+        </div>
+        <!-- Producto 8 -->
+        <div class="product-card">
+            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1344751701l/15812859.jpg" alt="Producto 8">
+            <div class="product-info">
+                <div class="product-title">Guitarra para Dummies</div>
+                <div class="product-prices">
+                    <span class="original-price">$12.00</span>
+                    <span class="current-price">$5.00</span>
+                </div>
+                <div class="product-description">
+                      ¡Repleta de ejercicios ilustrados con fotografías y canciones que puedes tocar para practicar las técnicas que se comentan en cada sección!
+                </div>
+            </div>
+            <div class="product-actions">
+                <a href="https://t.me/PubliAdmin" class="btn" target="_blank">Comprar</a>
+            </div>
+        </div>
+        <!-- Producto 9 -->
+        <div class="product-card">
+            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1429120157l/25365462.jpg" alt="Producto 9">
+            <div class="product-info">
+                <div class="product-title">Historia del arte para Dummies</div>
+                <div class="product-prices">
+                    <span class="original-price">$10.00</span>
+                    <span class="current-price">$4.00</span>
+                </div>
+                <div class="product-description">
+                      Ideal para estudiantes o amantes del arte, esta divertida y sencilla guía te acerca a los movimientos y períodos artísticos más importantes
+                </div>
+            </div>
+            <div class="product-actions">
+                <a href="https://t.me/PubliAdmin" class="btn" target="_blank">Comprar</a>
+            </div>
+        </div>
+        <!-- Producto 10 -->
+        <div class="product-card">
+            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348637863l/2235830.jpg" alt="Producto 10">
+            <div class="product-info">
+                <div class="product-title">Finanzas Personales para Dummies</div>
+                <div class="product-prices">
+                    <span class="original-price">$14.00</span>
+                    <span class="current-price">$6.00</span>
+                </div>
+                <div class="product-description">
+                      Proporciona una magnífica perspectiva y ayuda en el mundo de las inversiones y otros asuntos de dinero
+                </div>
+            </div>
+            <div class="product-actions">
+                <a href="https://t.me/PubliAdmin" class="btn" target="_blank">Comprar</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <!-- Botón para unirse al canal de Telegram -->
+<div style="text-align: center; margin-top: 10px;">
+    <button style="background-color: #57ba30; color: white; padding: 10px 20px; border: none; border-radius: 25px; cursor: pointer; margin-bottom: 20px;"
+            onclick="window.location.href='https://t.me/PubliAdmin'">
+        Si no encuentras el libro o curso que buscas toca aquí y pregúntame ese título, tenemos más de medio millón de libros 
+    </button>
+</div>
+
+    <button id="backToTop">⬆️</button>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.querySelector(".search-bar input");
+    const productCards = document.querySelectorAll(".product-card");
+
+    searchInput.addEventListener("input", function () {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        productCards.forEach(card => {
+            const productTitle = card.querySelector(".product-title").textContent.toLowerCase();
+            const productDescription = card.querySelector(".product-description").textContent.toLowerCase();
+
+            if (productTitle.includes(searchTerm) || productDescription.includes(searchTerm)) {
+                card.style.display = "block"; // Mostrar tarjeta si coincide
+            } else {
+                card.style.display = "none"; // Ocultar tarjeta si no coincide
+            }
+        });
+    });
+
+    // Mostrar/Ocultar botón dependiendo de la posición del scroll
+    window.addEventListener("scroll", function () {
+        const backToTopButton = document.getElementById("backToTop");
+        if (window.scrollY > window.innerHeight / 2) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    });
+
+    // Función para desplazarse hacia el inicio de la página
+    document.getElementById("backToTop").addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+</script>
+
+</body>
+</html>
