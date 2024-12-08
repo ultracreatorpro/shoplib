@@ -341,10 +341,10 @@
 
         <script>
         document.addEventListener("DOMContentLoaded", function () {
-        const searchInput = document.querySelector(".search-bar input");
-        const productCards = document.querySelectorAll(".product-card");
+    const searchInput = document.querySelector(".search-bar input");
+    const productCards = document.querySelectorAll(".product-card");
 
-        searchInput.addEventListener("input", function () {
+    searchInput.addEventListener("input", function () {
         const searchTerm = searchInput.value.toLowerCase();
 
         productCards.forEach(card => {
@@ -356,8 +356,10 @@
             } else {
                 card.style.display = "none"; // Ocultar tarjeta si no coincide
             }
-            
-        // Mostrar/Ocultar botón dependiendo de la posición del scroll
+        });
+    });
+
+    // Mostrar/Ocultar botón dependiendo de la posición del scroll
     window.addEventListener("scroll", function () {
         const backToTopButton = document.getElementById("backToTop");
         if (window.scrollY > window.innerHeight / 2) {
@@ -367,13 +369,14 @@
         }
     });
 
-    // Función para desplazar hacia el inicio de la página
+    // Función para desplazarse hacia el inicio de la página
     document.getElementById("backToTop").addEventListener("click", function () {
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });
     });
+});
 </script>
 
 </body>
